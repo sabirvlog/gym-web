@@ -1,0 +1,148 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	font-family: sans-serif;
+	/*background: linear-gradient(rgba(0,0,0,.5)50%,rgba(0,0,0,.5)50%) url(gym.jpg);*/
+	background-image: url(workout.jpg);
+	background-blend-mode: darken;
+	background-size: cover;
+	background-position: center;
+	overflow: hidden;
+}
+.navbar {
+	display: flex;
+}
+.logo  {
+	width: 13%;
+}
+.logo strong {
+	font-size: 20px;
+	font-family: serif;
+	margin-left: 28px;
+	user-select: none;
+	color: cyan;
+}
+.logo img{
+    width: 60%;
+    margin: 20px 40px 2px 40px;
+    filter: invert(100%);
+    border: 2px solid darkslategrey;
+    border-radius: 50%;
+    padding: 5px;
+    background: antiquewhite;
+}
+.navbar ul {
+	display: flex;
+	margin: 15px 90px;
+}
+.navbar ul li {
+	list-style: none;
+	font-size: 20px;
+	margin: 12px;
+	padding: 12px;
+}
+.navbar ul li a {
+	text-decoration: none;
+    color: white;
+    background: orange;
+    padding: 5px 5px;
+    border: 1px solid darkorange;
+    border-radius: 5px;
+    user-select: none;
+    transition: all .7s ease-in;
+}
+#active , .navbar ul li a:hover {
+	cursor: pointer;
+	color: white;
+	background: green;
+	border: none;
+	text-decoration: underline;
+}
+.right {
+	float: right;
+    position: relative;
+    top: -80px;
+}
+.right ul {
+	display: inline-flex;
+	margin-right: 46px;
+	user-select: none;
+}
+.right ul li{
+	list-style: none;
+    padding: 5px;
+    font-size: 25px;
+}
+.right ul li a {
+	text-decoration: none;
+	color: black;
+}
+.right ul li i {
+	margin: 7px;
+}
+.form {
+	display: grid;
+	width: 35%;
+	margin: 50px 400px;
+	border: 3px solid cyan;
+	border-radius: 10px;
+
+}
+.form h2 {
+	color: chartreuse;
+    background: grey;
+    text-align: center;
+    font-size: 30px;
+    padding: 5px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+.form input {
+	padding: 10px 4px;
+	margin: 5px 4px;
+	border: 1px solid gray;
+	border-radius: 5px;
+	text-transform: capitalize;
+	font-size: 18px;
+}
+.btn {
+	/*position: absolute;*/
+	top: 450px;
+	left: 480px;
+}
+.btn button {
+	width: 300px;
+    text-align: center;
+    margin-left: 85px;
+    padding: 5px 8px;
+    font-size: 24px;
+    font-weight: bolder;
+    color: white;
+    background: black;
+    border: 1px solid white;
+    border-radius: 3px;
+    font-family: cursive;
+    transition: all .5s ease;
+}
+.btn button:hover {
+	cursor: pointer;
+	color: white;
+    background: orangered;
+}
+.foot {
+	position: absolute;
+	bottom: 0;
+	color: white;
+	width: 100%;
+	background-color: orange;
+	padding: 5px;
+    font-size: 20px;
+    font-family: cursive;
+}
+.foot marquee {
+	font-size: 20px;
+	margin: 1px 20px;
+}
